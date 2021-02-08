@@ -1,6 +1,13 @@
+import React from 'react';
+import AddFrom from './AddFrom';
 
-import React from "react";
 const Header = () => {
-    return <header>Header</header>
-}
-export default Header
+    return (
+        <div>
+            <h1 className="text-center">Todo</h1>
+            <AddFrom/>
+        </div>
+    );
+};
+
+export default Header;
