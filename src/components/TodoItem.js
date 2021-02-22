@@ -5,9 +5,11 @@ class TodoItem extends Component {
         const spanClassName = this.props.done ? "text done" : "text"
         return (
             <li className={className}>
-                <span onClick={this.props.changeInportant} className={spanClassName}> {this.props.children}</span>
-                <button onClick={this.onClickDone} className="btn btn-success">Done</button>
-
+                <span onClick={this.props.changeImportant} className={spanClassName}> {this.props.children}</span>
+                <button onClick={this.props.changeDone} className="btn btn-success">Done</button>
+                <button onClick={this.props.deleteItem}className="btn btn-danger">
+                <i className="fa fa-trash"></i>
+                </button>
             </li>
         )
     }
